@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Books</title>
+</head>
+<body>
+    <div id="link">
+        <a href="/Author/Introduction">Introduction</a>
+    </div>
+    <div>
+        <h2>Books</h2>
+        <ul>
+            @foreach (var book in Model.Books)
+            {
+                <li>@book</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

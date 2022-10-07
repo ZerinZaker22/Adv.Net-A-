@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Course</h1>
+<hr/>
+<form action="" method="post">
+    <input type="text" name="Cname" placeholder="Course name" class="form-control" value="@(Model != null ? Model.Cname: "")" />
+    <span style="color:red;">@Html.ValidationMessage("Cname")</span><br />
+    <input type="text" name="Cid" placeholder="Course id" class="form-control" value="@(Model != null ? Model.Cid: "")" />
+    <span style="color:red;">@Html.ValidationMessage("Cid")</span><br />
+    <input type="text" name="Cteacher" placeholder="Course teacher" class="form-control" value="@(Model != null ? Model.Cteacher: "")" />
+    <span style="color:red;">@Html.ValidationMessage("Cteacher")</span><br /><br />
+    <input type="submit" name="courseSubmit" value="Submit" class="btn btn-primary" />
+</form>              
+

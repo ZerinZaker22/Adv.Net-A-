@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Introduction</title>
+</head>
+<body>
+
+    <div id="link">
+        <a href="/Author/Books">Books</a>
+    </div>
+
+    <div id="about">
+        <h1>@Model.Name</h1>
+        <p>
+            @Model.About
+            <br />
+            @Model.DOB
+        </p>
+    </div>
+    <hr />
+
+    <div>
+        <h2>Awards</h2>
+        <ul>
+            @foreach (var award in Model.Awards)
+            {
+                <li>@award</li>
+            }
+        </ul>
+    </div>
+
+    <div>
+
+    </div>
+</body>
+</html>
