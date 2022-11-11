@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "ShowAssignedTasks";
+}
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+
+
+<div class="form formAssign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            ShowAssignedTasks
+        </div>
+        <form>
+            @foreach (var item in Model)
+            {
+                <h2 class="bg-info info2">Restaurant Name: @item.Restaurant.Name</h2>
+                <h4>Location: @item.Restaurant.Location</h4>
+                <h4>Status: @item.Status</h4>
+                foreach (var i in item.FoodDetails)
+                {
+                    <h4>Food Name: @i.Name</h4>
+                    <h4>Food Amount: @i.Amount</h4>
+                }
+                if (item.EmployeeId != null)
+                {
+                    <h4>Assigned delivery guy: @item.Employee.Name</h4>
+                }
+                else
+                {
+                    <h4>Assigned delivery guy: Not Assigned</h4>
+                }
+            }
+        </form>
+        <br />
+        <a href="/Employee/ShowPendingTasks" class="btn btn-warning btn-warning2">Show Pending Tasks</a>
+        <br />
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+
+    </center>
+</div>
+

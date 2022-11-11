@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Complete";
+}
+
+<h2>Complete</h2>
+
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+
+
+
+<div class="form formAssign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Complete
+        </div>
+        <form class="completeText" method="post">
+            <input type="hidden" value="@Model.Id" name="Id" />
+            <h3>Click Yes to confirm</h3>
+            <input type="submit" class="btn btn-success" value="Yes" />
+         
+        </form>
+        <br />
+
+        <br />
+
+
+        <a align="right" href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+    </center>
+</div>

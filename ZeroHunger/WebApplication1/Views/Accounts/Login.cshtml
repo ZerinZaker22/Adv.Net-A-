@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<link rel="stylesheet" href="~/css/AccIndex.css" type="text/css" />
+
+<head>
+    <title>Webpage Design</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="Mynavbar">
+            <div class="icon">
+                <h2 class="logo">Z-NGO</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="~/Views/Accounts/Login.cshtml">HOME</a></li>
+                    <li><a href="#">EMPLOYEE</a></li>
+                    <li><a href="#">RESTAURANT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>Feed<br><span>Bangladesh</span> <br>Foundation Inc.</h1>
+            <p class="par">
+                We believe no one should go to bed hungry, and that food is essential. <br>
+            </p>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+
+            <div class="LoginBox form">
+                <h2>Login Here</h2>
+                <form action="" method="post">
+                <div class="">
+                   <input class="form-control" type="text" name="Name" placeholder="Enter Name Here">
+                </div>
+                <div class="">
+                   <input class="form-control" type="password" name="Password" placeholder="Enter Password Here">
+                </div>
+
+                <div class="">
+                  <button class="btn btn-lg btn-block btn-primary w-50" type="submit">Login</button>
+                </div>
+
+                </form>
+                <p class="link">
+                    Don't have an account?<br>
+                    <div class="LoginLink">
+                        @Html.ActionLink("Sign Up Here", "Index")
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "PlaceNewRequest";
+}
+
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/StyleSheet1.css" type="text/css" />
+
+
+<div class="form formAssign assign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Request here to add extra food in Z-NGO
+        </div>
+        <form action="" class="formPlaceNewRequest" method="post">
+            <input type="text" name="Name" class="PlaceNewRequest1" placeholder="   Food Name" /><br />
+            <input type="text" name="Amount" class="PlaceNewRequest1" placeholder="   Food Amount" /><br />
+            <input type="submit" class="btn btn-info confirm" value="Confirm Food Request" />
+        </form>
+
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+    </center>
+</div>

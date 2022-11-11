@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "AssignEmployees";
+}
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/StyleSheet1.css" type="text/css" />
+<link rel="stylesheet" href="~/css/extra.css" type="text/css" />
+
+
+<div class="form formAssign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Assign Employees To Collect food <br />from Restaurant
+        </div>
+        @if (TempData["msg"] != null)
+        {
+            @TempData["msg"]
+        }
+    <form class="ASSIGNCLASS" method="post" action=""> 
+        <table class="table table-bordered text-center">
+            <tr class="bg-info">
+                <td>Employee Names</td>
+                <td>Locations</td>
+            </tr>
+            @foreach (var cs in Model)
+            {
+                <tr>
+                    <td><input type="checkbox" name="Employees[]" value="@cs.Id" class="form-inline" /> @cs.Name</td>
+                    <td>@cs.Location</td>
+                </tr>
+            }
+        </table>
+        <input type="submit" value="Assign" class="btn btn-success assignSubmit" />
+    </form>
+        <br />
+
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+    </center>
+</div>

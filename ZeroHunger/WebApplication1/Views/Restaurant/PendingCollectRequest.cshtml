@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "PendingCollectRequest";
+}
+
+
+
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/StyleSheet1.css" type="text/css" />
+
+
+
+<div class="form formAssign assign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Requested food details
+        </div>
+        @foreach (var item in Model)
+        {
+            <h3 class="bg-info">Restaurant Name: @item.Restaurant.Name</h3>
+            <h4>Location: @item.Restaurant.Location</h4>
+            <h4>Status: @item.Status</h4>
+            foreach (var i in item.FoodDetails)
+            {
+                <h4>Food Name: @i.Name</h4>
+                <h4>Food Amount: @i.Amount</h4>
+                if (item.EmployeeId != null)
+                {
+                    <h4>Assigned delivery guy: @item.Employee.Name</h4>
+                }
+                else
+                {
+                    <h4>Assigned delivery guy: Not Assigned</h4>
+                }
+
+                <a href="/Restaurant/Edit/@i.Id" class="btn btn-warning btn-warning7">Edit</a>
+                <a href="/Restaurant/Delete/@i.Id" class="btn btn-warning btn-warning7">Delete</a>
+
+                <a href="/Restaurant/PlaceNewRequest" class="btn btn-warning P">Place New Request</a>
+                <a href="/Restaurant/AllCollectRequest/@Session["ResId"]" class="btn btn-warning P">All Requests</a>
+            }
+        }
+
+        <a href="/Accounts/Logout" class="btn btn-danger logout">Logout</a>
+    </center>
+</div>

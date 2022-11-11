@@ -1,0 +1,201 @@
+﻿body {
+    background: linear-gradient(rgb(0,0,0,0.8), rgba(0,0,0,0.8)), url(../Image/cover.jpg) no-repeat center / cover;
+}
+
+.form {
+    width: 572px;
+    height: 544px;
+    background: linear-gradient(to top, rgb(255 255 255 / 16%)50%,rgb(255 240 240 / 17%)50%);
+    /* position: absolute; */
+    top: 196px;
+    left: 518px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    /* padding: 110px; */
+    padding-top: 42px;
+    margin-top: 83px;
+    margin-left: 327px;
+}
+
+    .form h2 {
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        color: #ff7200;
+        font-size: 22px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 8px;
+    }
+h2.EL {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 13px;
+    margin-left: 172px;
+    margin-top: 67px;
+    margin-bottom: -47px;
+    /* margin: -16px; */
+    padding: 10px;
+}
+    .form a {
+        width: 141px;
+        height: 33px;
+        font-family: sans-serif;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        background-color: #ff7200;
+        border-radius: 10px;
+        margin: 2px;
+        padding: -5px;
+    }
+
+    .form Exit {
+        width: 141px;
+        height: 33px;
+        font-family: sans-serif;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        background-color:red;
+        border-radius: 10px;
+        margin: 2px;
+        padding: -5px;
+    }
+
+a.Exit.btn.btn-danger {
+    background-color: #b00b0b;
+    margin-top: 84px;
+}
+
+    .form h4 {
+        color: white;
+        margin-bottom: 7px;
+    }
+.form.formAssign {
+    height: 805px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: none;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #ff7200;
+    color: white;
+}
+.bg-info {
+    background-color: #ff7200;
+}
+
+table.emplogOut {
+    /* text-align: center; */
+    margin-left: 209px;
+    margin-top: 93px;
+}
+
+
+.table-bordered {
+    margin-top: 106px;
+    border: 1px solid #ddd;
+}
+
+.form td a {
+    width: 170px;
+    height: 33px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #ff0500;
+    border-radius: 10px;
+    margin: 2px;
+    padding: -5px;
+}
+
+
+h2.bg-info.info2 {
+    width: 357px;
+    margin-top: 32px;
+}
+
+a.btn.btn-warning.btn-warning2 {
+    background-color: #a33100;
+    width: 559px;
+}
+
+a.btn.btn-danger.btn-dangerL {
+    margin-top: 62px;
+    background-color: red;
+}
+
+.btn.btn-warning.btn-warning3 {
+    font-size: 30px;
+    width: 572px;
+    margin-top: -41px;
+    padding: 36px 0px;
+    background-color: #a33100;
+}
+
+form.completeText {
+    /* font-size: 40px; */
+    color: white;
+    margin-top: 197px;
+    margin-bottom: 120px;
+}
+form.AddNewEmployee {
+    margin-top: 154px;
+    margin-bottom: 171px;
+}
+
+
+input.btn.btn-infoAdd {
+    margin-top: 64px;
+    width: 505px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #056f05;
+}
+
+a.btn.btn-warning.btn-warning7 {
+    background-color: #a81919;
+    width: 275px;
+    margin-top: 63px;
+    margin-bottom: 29px;
+}
+
+
+.form.formAssign.assign {
+    height: 1244px;
+}
+
+
+.btn.btn-warning.btn-warning99 {
+    width: 573px;
+    color: white;
+    text-decoration: none;
+    background-color: #a81919;
+    border-radius: 11px;
+    margin-top: 20px;
+    margin-bottom: -68px;
+}
+    .btn.btn-warning.btn-warning99 a {
+        /* width: 557px; */
+        /* color: white; */
+        text-decoration: none;
+        background-color: #a81919;
+    }
+
+h2.bg-info.NGODETAIL {
+    margin-top: 69px;
+}

@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "AllCollectRequest";
+}
+
+
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/extra.css" type="text/css" />
+
+
+
+<div class="form formAssign assign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Apply to Z-NGO and place a request of<br /> your extra food to help the Hungry One.
+        </div>
+        @foreach (var item in Model)
+        {
+            <h3 class="bg-info">Restaurant Name: @item.Restaurant.Name</h3>
+            <h4>Location: @item.Restaurant.Location</h4>
+            <h4>Status: @item.Status</h4>
+            foreach (var i in item.FoodDetails)
+            {
+                <h4>Food Name: @i.Name</h4>
+                <h4>Food Amount: @i.Amount</h4>
+            }
+            if (item.EmployeeId != null)
+            {
+                <h4>Assigned delivery guy: @item.Employee.Name</h4>
+            }
+            else
+            {
+                <h4>Assigned delivery guy: Not Assigned</h4>
+            }
+        }
+    <a href="/Restaurant/PlaceNewRequest" class="btn btn-warning btn-warning7">Request to add food in Z-NGO</a>
+
+        <br />
+        <div class="btn btn-warning btn-warning3  Fooddetails">
+            Here you can see the details of your<br /> requested food<br />
+        </div>
+        <a href="/Restaurant/PendingCollectRequest" class="btn btn-warning btn-warning7">Requested food details</a>
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL FooddetailsLogout">Logout</a>
+
+    </center>
+</div>

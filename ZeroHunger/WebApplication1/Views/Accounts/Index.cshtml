@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link rel="stylesheet" href="~/css/AccIndex.css" type="text/css" />
+
+<head>
+    <title>Webpage Design</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="Mynavbar">
+            <div class="icon">
+                <h2 class="logo">Z-NGO</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="~/Views/Accounts/Login.cshtml">HOME</a></li>
+                    <li><a>@Html.ActionLink("EMPLOYEE", "ShowAssignedTasks")</a></li>
+                    <li><a href="~/Views/Restaurant/AllCollectRequest.cshtml">RESTAURANT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>Feed<br><span>Bangladesh</span> <br>Foundation Inc.</h1>
+            <p class="par">
+                We believe no one should go to bed hungry, and that food is essential. <br>
+            </p>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+
+            <div class="form">
+                <h2>SignUp Here</h2>
+                <form action="" method="post">
+                    <div class="NM">
+                        <input class="" type="text" name="Name" placeholder="Enter Name Here">
+                    </div>
+
+
+                    <div class="PS">
+   
+                        <input class="" type="password" name="Password" placeholder="Enter Password Here">
+                    </div>
+
+                    <div class="LC">
+
+                        <input class="" type="text" name="Location" placeholder="Enter Location Here">
+                    </div>
+
+                    <div >
+                        <button class="btnn"
+                                type="submit">
+                            SIGN UP
+                        </button>
+                    </div>
+                </form>
+
+
+                <p class="link">
+                    Already have an account?<br>
+                    <div class="LoginLink">
+                        @Html.ActionLink("Login Here", "Login")
+                    </div>
+                </p>
+                <br />
+                <p class="liw">Or</p>
+                <br />
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+

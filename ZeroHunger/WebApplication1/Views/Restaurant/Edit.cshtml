@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Edit";
+}
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/StyleSheet1.css" type="text/css" />
+
+
+<div class="form formAssign assign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Edit
+        </div>
+        <form action="" class="EditForm" method="post">
+            <input type="hidden" value="@Model.Id" name="Id" />
+            <input type="text" name="Name" value="@Model.Name" class="form-controlone" placeholder="Edit food Name" />
+            <input type="text" name="Amount" value="@Model.Amount" class="form-controlone 1" placeholder="Edit food Amount" />
+            <input type="submit" class="btn btn-warning btn-warning12" value="Edit Food" />
+        </form>
+
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+    </center>
+</div>

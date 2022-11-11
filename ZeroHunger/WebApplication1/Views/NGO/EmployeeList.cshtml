@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "EmployeeList";
+}
+
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/extra.css" type="text/css" />
+
+
+
+
+<div class="form">
+    <div class="btn btn-warning btn-warning3">
+        All Employee List of Z-NGO
+    </div>
+    <table class="table table-bordered text-center">
+        <tr class="bg-info">
+            <td>Name</td>
+            <td>Location</td>
+            <td>Tasks Completed</td>
+        </tr>
+
+        @foreach (var cs in Model)
+        {
+            <tr>
+                <td>@cs.Name</td>
+                <td>@cs.Location</td>
+                <td>@cs.TotalCompletedRequests</td>
+            </tr>
+        }
+    </table>
+    <table class="emplogOut">
+        <tr>
+            <td>
+                <a href="/Accounts/Logout" class="btn btn-danger">Logout</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+

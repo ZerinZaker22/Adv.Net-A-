@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "AssignTask";
+}
+
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/extra.css" type="text/css" />
+
+
+<div class="form formAssign form5">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Assign Employee to Collect The Foods
+        </div>
+        <form method="post">
+            @foreach (var item in Model)
+            {
+                <h3 class="bg-info">Restaurant Name: @item.Restaurant.Name</h3>
+                <h4>Location: @item.Restaurant.Location</h4>
+                <h4>Status: @item.Status</h4>
+                foreach (var i in item.FoodDetails)
+                {
+                    <h4>Food Name: @i.Name</h4>
+                    <h4>Food Amount: @i.Amount</h4>
+                }
+                if (item.EmployeeId != null)
+                {
+                    <h4>Assigned delivery guy: @item.Employee.Name</h4>
+                }
+                else
+                {
+                    <h4>Assigned delivery guy: Not Assigned</h4>
+                }
+                <a href="/NGO/AssignEmployees/@item.Id" class="btn btn-success">Assign Employees</a>
+            }
+        </form>
+
+        <br />
+        <br />
+        <a href="/NGO/AllTasks" class="btn btn-warning btn-warning7">Show All Given Tasks</a>
+        <br />
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+        <br />
+    </center>
+</div>

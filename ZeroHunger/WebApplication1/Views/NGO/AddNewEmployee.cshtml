@@ -1,0 +1,23 @@
+﻿
+
+@{
+    ViewBag.Title = "AddNewEmployee";
+}
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+
+
+<div class="form formAssign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Add New Employee To Z-NGO
+        </div>
+        <form class="AddNewEmployee" action="" method="post">
+            <input type="text" name="Name" class="form-control" placeholder="Name" />
+            <input type="text" name="Location" class="form-control" placeholder="Location" />
+            <input type="password" name="Password" class="form-control" placeholder="Password" />
+            <input type="submit" class="btn btn-infoAdd" value="Add Employee" />
+        </form>
+        <br />
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+    </center>
+</div>

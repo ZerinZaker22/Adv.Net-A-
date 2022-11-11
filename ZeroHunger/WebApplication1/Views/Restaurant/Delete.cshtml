@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Delete";
+}
+
+<link rel="stylesheet" href="~/css/ngo.css" type="text/css" />
+<link rel="stylesheet" href="~/css/StyleSheet1.css" type="text/css" />
+
+
+
+<div class="form formAssign assign">
+    <center>
+        <div class="btn btn-warning btn-warning3">
+            Delete This Food Item ?
+        </div>
+        <form action="" method="post">
+            <input type="hidden" value="@Model.Id" name="Id" />
+            <input type="text" name="Name" value="@Model.Name" class="form-control OneBorder" readonly placeholder="Name" />
+            <input type="text" name="Amount" value="@Model.Amount" class="form-control OneBorder two" readonly placeholder="Amount" />
+            <input type="submit" class="btn btn-danger btn-warning13" value="Delete" />
+        </form>
+        <a href="/Accounts/Logout" class="btn btn-danger btn-dangerL">Logout</a>
+    </center>
+</div>
